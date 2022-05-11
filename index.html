@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <title>Rudra Swap</title>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
@@ -28,35 +28,50 @@
             <button id="login_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign in with Metamask</button>
         </div>
       </nav>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col col-md-6 offset-md-3" id="window">
-                <h4>Swap</h4>
+               <h3>Swap Your Favourite tokens.</h3>
                 <div id="form">
                     <div class="swapbox">
                         <div class="swapbox_select token_select" id="from_token_select">
                             <img class="token_image" id="from_token_img">
                             <span id="from_token_text"></span>
+                            Select Token
                         </div>
                         <div class="swapbox_select">
-                          Select Token
-                            <input class="number form-control" placeholder="amount" id="from_amount">
-                        </div>
+                        <input class="number form-control" placeholder="amount" id="from_amount">
+                      </div>
                     </div>
                     <div class="swapbox">
                         <div class="swapbox_select token_select"  id="to_token_select">
                             <img class="token_image" id="to_token_img">
                             <span id="to_token_text"></span>
+                            Select Token
                         </div>
                         <div class="swapbox_select">
-                          Select Token
-                            <input class="number form-control" placeholder="amount" id="to_amount" readonly>
-                        </div>
+                          <input class="number form-control" placeholder="amount" id="to_amount" readonly>
+                          </div>
                     </div>
                     <div>Estimated Gas: <span id="gas_estimate"></span></div>
                     <button disabled class="btn btn-large btn-primary btn-block" id="swap_button">
                         Swap
                     </button>
+                    <div class="container-fluid">
+                    <iframe class="responsive-iframe"
+      src="https://widget.onramper.com?color=266677&apiKey=pk_test_aqvUfvsbQSBcrZOlvce2zd2RH2HQ3czYdvQHzmJNeMc0"
+      height="545px"
+      width="400px"
+      title="Onramper widget"
+      frameborder="0"
+      allow="accelerometer;
+      autoplay; camera; gyroscope; payment"
+      style="box-shadow: 2px 2px 1px 1px
+      rgba(221, 69, 69, 0.1);"
+    >
+      <a href="https://widget.onramper.com" target="_blank">Buy crypto</a>
+                  </iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,7 +91,6 @@
           </div>
         </div>
       </div>
-
-    <script type="text/javascript" src="./main.js"></script>
-  </body>
+      <script type="text/javascript" src="./main.js"></script>
+   </body>
 </html>
