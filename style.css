@@ -1,6 +1,6 @@
 #window{
-    margin-top: 60px;
-    background-color: rgb(122, 19, 19);
+    margin-top: 50px;
+    background-color: #000;
     color: #fff;
     padding: 15px;
     border-radius: 20px;
@@ -12,17 +12,17 @@
 }
 .swapbox{
     overflow: auto;
-    margin: 35px 0;
+    margin: 20px 0;
     padding: 20px;
-    background-color: #c44e4e;
-    border-radius: 50px;
-    border: 1px solid #f8eeee;
+    background-color: #e64e4e;
+    border-radius: 20px;
+    border: 1px solid #d36464;
 }
 .token_select{
-    padding:15px 0;
+    padding:5px 0;
 }
 .token_select:hover{
-    background-color: #3b3535;
+    background-color: #464646;
     cursor: pointer;
     
 }
@@ -39,9 +39,4 @@
 .token_row:hover{
     background-color: #e4e4e4;
     cursor: pointer;
-}
-.html, body, onramper-widget {
-    height: 100%;
-    width: 100%;
-    margin: 1em;;
 }
